@@ -1,0 +1,50 @@
+.tape {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  padding: 15px;
+  border-left: 1px solid #c4bcbc;
+  border-right: 1px solid #c4bcbc;
+}
+@media (max-width: 1700px) {
+  .tape {
+    border-left: none;
+    border-right: none;
+  }
+}
+@media (max-width: 1024px) {
+  .tape {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+}
+.tape .posts, .tape .headings {
+  margin: 15px;
+}
+.tape .posts .post, .tape .headings .heading {
+  background: white;
+  margin-bottom: 30px;
+}
+.tape .posts .post:last-child, .tape .headings .heading:last-child {
+  margin-bottom: 0;
+}
+.tape .posts {
+  flex: 70;
+}
+.tape .headings {
+  flex: 30;
+}
+
+@media (max-width: 550px) {
+  .tape {
+    padding: 10px 0;
+  }
+  .tape .posts, .tape .headings {
+    margin: 10px 0;
+  }
+}
+
+/*# sourceMappingURL=tape.css.map */

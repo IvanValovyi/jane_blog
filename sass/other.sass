@@ -1,0 +1,114 @@
+@font-face 
+  font-family: 'Oswald-bold'
+  font-style: normal
+  font-weight: 600
+  font-display: swap
+  src: url(https://fonts.gstatic.com/s/oswald/v47/TK3_WkUHHAIjg75cFRf3bXL8LICs1y9osUZiZQ.woff2) format('woff2')
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+
+@font-face 
+  font-family: 'Oswald-light'
+  font-style: normal
+  font-weight: 300
+  src: url(https://fonts.gstatic.com/s/oswald/v47/TK3iWkUHHAIjg752GT8G.woff2) format('woff2')
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+
+@font-face 
+  font-family: 'Open Sans'
+  font-style: normal
+  font-weight: 400
+  font-stretch: 100%
+  font-display: swap
+  src: url(https://fonts.gstatic.com/s/opensans/v28/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4gaVI.woff2) format('woff2')
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+
+body, *
+    margin: 0
+    padding: 0
+body
+    background: #e2dfdf
+
+.app
+    max-width: 1600px
+    margin: 0 auto
+    @media ( max-width: 1700px )
+        max-width: none
+        width: 100%
+
+input, button
+    outline: none
+    border: none
+button
+    cursor: pointer
+
+button.subscribe
+    padding: 10px 20px
+    font-size: 24px
+    font-weight: 100
+
+h1
+    font-size: 48px
+    &.bold_title
+        font-size: 64px
+        letter-spacing: 2px
+h2
+    font-size: 30px
+    font-weight: 400
+h3
+    font-size: 20px
+    font-weight: 400
+h6
+    font-size: 16px
+
+.date
+    font-size: 18px
+    color: #00000060
+span.name
+    font-size: 36px
+
+.tag
+    background: black
+    color: white
+    padding: 0 5px
+
+.light_text, button.subscribe
+    font-family: 'Oswald-light', sans-serif
+
+footer
+    background: black
+    color: white
+    text-align: center
+    padding: 10px 0
+    font-size: 18px
+
+@media ( max-width: 550px )
+    h1
+        font-size: 36px
+        &.bold_title
+            font-size: 48px
+            letter-spacing: 1px
+    h2
+        font-size: 26px
+    h3
+        font-size: 18px
+    h6
+        font-size: 14px
+    button.subscribe
+        padding: 5px 10px
+        font-size: 18px
+
+@media ( max-width: 440px )
+    h1
+        font-size: 32px
+        &.bold_title
+            font-size: 36px
+            line-height: 1.2
+            margin-bottom: 10px
+    span.name
+        font-size: 24px
+    .date
+        font-size: 14px
+
+@media ( max-width: 375px )
+    .date
+        font-size: 12px

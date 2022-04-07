@@ -1,0 +1,24 @@
+@import './mixin'
+
+header
+    background: black
+    @include flex(space-between, center)
+    .main_links
+        @include flex(flex-start, center)
+        a
+            @include flex(center, center)
+            padding: 0
+    svg
+        width: 25px
+        height: 25px
+        padding: 10px 15px
+        fill: white
+        background: #ffffff00
+        transition: 0.5s
+        cursor: pointer
+        &:hover 
+            fill: black
+            background: #bdbdbd
+@media ( max-width: 600px )
+    header
+        display: none

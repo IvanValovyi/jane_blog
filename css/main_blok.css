@@ -1,0 +1,50 @@
+.main_blok {
+  font-family: "Oswald-bold", sans-serif;
+  width: 100%;
+  height: max-content;
+}
+.main_blok, .main_blok .header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 100%;
+}
+.main_blok .header {
+  padding: 50px 0;
+  background: white;
+}
+.main_blok .baner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+.main_blok .baner img {
+  width: 1600px;
+}
+@media (max-width: 1700px) {
+  .main_blok .baner img {
+    width: 100vw;
+  }
+}
+.main_blok .baner .content {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  color: white;
+  padding: 20px;
+}
+.main_blok .baner .content button {
+  padding: 5px 10px;
+  background: #c5c2c2a2;
+  color: black;
+  transition: 0.3s;
+}
+.main_blok .baner .content button:hover {
+  background: #ece8e8be;
+}
+
+/*# sourceMappingURL=main_blok.css.map */

@@ -1,0 +1,132 @@
+@import './mixin'
+
+.heading
+    @include flex(flex-start, center, column)
+    padding: 0 15px
+    h3
+        background: black
+        color: white
+        width: 100%
+        padding: 15px
+    &.main_heading
+        padding: 0
+        img
+            width: 100%
+            filter: grayscale(75%)
+        .content
+            padding: 15px
+            width: calc( 100% - 30px )
+            background: black
+            color: white
+            h3
+                padding: 0
+            p
+                margin-top: 20px
+    &.inspiration
+        padding: 0
+        h3
+            width: calc( 100% - 30px )
+        .content
+            @include flex(space-evenly, center)
+            flex-wrap: wrap
+            width: 100%
+            padding: 5px 0
+            img
+                width: calc( 50% - 20px )
+                margin: 5px 0
+    &.pop_posts 
+        padding: 0
+        h3
+            width: calc( 100% - 30px )
+        .content
+            width: 100%
+            .pop_post
+                @include flex(flex-start, center)
+                padding: 10px 15px
+                position: relative
+                user-select: none
+                cursor: pointer
+                &:hover
+                    background: #c4bcbc
+                &::before
+                    content: ''
+                    position: absolute
+                    width: 100%
+                    height: 1px
+                    background: #c4bcbc
+                    left: 0
+                    bottom: 0
+                &:last-child::before
+                    display: none
+                    
+                img
+                    width: 50px
+                    margin-right: 20px
+                .author_name
+                    font-weight: 400
+                    font-size: 18px
+                p
+                    font-size: 15px
+                    line-height: 1.5
+    &.advertise
+        .content
+            height: 170px
+            width: 100%
+            margin: 15px 0
+            background: #f0eaea
+            @include flex(center, center)
+    &.tags
+        .content
+            @include flex(flex-start, center)
+            flex-wrap: wrap
+            padding: 10px 0
+            width: 100%
+            .tag
+                width: max-content
+                background: #eeeded
+                color: black
+                padding: 3px 7px
+                margin: 5px
+                cursor: pointer
+                user-select: none
+                font-size: 14px
+                font-family: "Open Sans", sans-serif
+                &:hover
+                    background: #dfdbdb
+                &:first-child
+                    background: black
+                    color: white
+    &.follow
+        .content
+            width: 100%
+            @include flex(flex-start, center)
+            padding: 15px 0
+            a
+                margin-right: 10px
+                &:last-child
+                    margin-right: 0
+                &:hover
+                    svg
+                        fill: #0000009f
+                svg
+                    width: 25px
+                    height: 25px
+    &.subscribe .content
+        padding: 15px 0
+        width: 100%
+        @include flex(flex-start, flex-start, column)
+        font-size: 15px
+        font-weight: 400
+        font-family: "Open Sans", sans-serif
+        input
+            padding: 10px
+            margin: 15px 0
+            border: 1px solid #797878
+            width: calc( 100% - 22px )
+        button
+            width: 100%
+            font-size: inherit
+            letter-spacing: 1px
+            background: #f44336
+            color: white
+            font-weight: 600

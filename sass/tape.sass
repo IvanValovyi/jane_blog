@@ -1,0 +1,29 @@
+@import './mixin'
+
+.tape
+    @include flex(flex-start, flex-start)
+    padding: 15px
+    border-left: 1px solid #c4bcbc
+    border-right: 1px solid #c4bcbc
+    @media ( max-width: 1700px )
+        border-left: none
+        border-right: none
+    @media ( max-width: 1024px )
+        @include flex(flex-start, center, column)
+    .posts, .headings
+        margin: 15px
+    .posts .post, .headings .heading
+        background: white
+        margin-bottom: 30px
+        &:last-child
+            margin-bottom: 0
+    .posts
+        flex: 70
+    .headings
+        flex: 30
+
+@media ( max-width: 550px )
+    .tape
+        padding: 10px 0
+        .posts, .headings
+            margin: 10px 0

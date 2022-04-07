@@ -1,0 +1,136 @@
+.post {
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 20px;
+}
+.post .header {
+  text-align: center;
+}
+.post .header h2 {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.post .header h3 {
+  font-size: 18px;
+  margin: 20px 0;
+}
+.post img.main_image {
+  width: 100%;
+}
+.post .text {
+  margin: 15px 0;
+}
+.post .text .topic {
+  font-weight: 800;
+}
+.post .text p {
+  margin: 15px 0;
+  font-size: 16px;
+}
+@media (max-width: 375px) {
+  .post .text p {
+    font-size: 12px;
+  }
+}
+.post .options_blok {
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.post .options_blok .like_btn, .post .options_blok .reply_btn {
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  user-select: none;
+}
+.post .options_blok .like_btn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  border: 1px solid #4b4a4a;
+}
+.post .options_blok .like_btn:hover {
+  background: black;
+  color: white;
+}
+.post .options_blok .like_btn:hover svg {
+  fill: white;
+}
+.post .options_blok .like_btn svg {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  transition: 0.3s;
+}
+.post .options_blok .reply_btn {
+  background: black;
+  color: white;
+}
+.post .options_blok .reply_btn:hover {
+  background: #c7c3c3;
+  color: black;
+}
+.post .options_blok .reply_btn span {
+  background: white;
+  color: black;
+  padding: 0 10px;
+  margin-left: 8px;
+}
+.post .reply_blok {
+  width: 100%;
+  border-top: 1px solid #c7c5c5;
+}
+.post .reply_blok.display_none {
+  display: none;
+}
+.post .reply_blok .reply {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  margin: 30px 0;
+}
+@media (max-width: 670px) {
+  .post .reply_blok .reply img {
+    width: 10px;
+    margin-right: 30px;
+  }
+  .post .reply_blok .reply p {
+    margin-top: 10px;
+    font-size: 16px;
+  }
+}
+.post .reply_blok .reply img {
+  width: 90px;
+  margin-right: 50px;
+}
+.post .reply_blok .reply .author_name {
+  font-size: 20px;
+  font-weight: 500;
+  margin-right: 10px;
+}
+.post .reply_blok .reply p {
+  margin-top: 20px;
+}
+
+@media (max-width: 670px) {
+  .post .reply_blok .reply img {
+    width: 70px;
+    margin-right: 30px;
+  }
+  .post .reply_blok .reply p {
+    margin-top: 10px;
+    font-size: 12px;
+  }
+}
+
+/*# sourceMappingURL=post.css.map */

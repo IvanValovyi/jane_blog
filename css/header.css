@@ -1,0 +1,41 @@
+header {
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+header .main_links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+header .main_links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  padding: 0;
+}
+header svg {
+  width: 25px;
+  height: 25px;
+  padding: 10px 15px;
+  fill: white;
+  background: #ffffff00;
+  transition: 0.5s;
+  cursor: pointer;
+}
+header svg:hover {
+  fill: black;
+  background: #bdbdbd;
+}
+
+@media (max-width: 600px) {
+  header {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=header.css.map */
