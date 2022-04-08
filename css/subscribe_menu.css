@@ -66,12 +66,39 @@
 .subscribe_menu .content input {
   border: 1px solid black;
   padding: 5px;
-  width: calc(100% - 10px);
+  width: calc(100% - 12px);
   font-size: 18px;
 }
 .subscribe_menu .content input:focus {
   outline: 1px solid black;
   border-radius: 5px;
+}
+
+@media (max-width: 750px) {
+  .subscribe_menu .content {
+    min-width: none;
+    max-width: 80vw;
+    padding: 20px 30px;
+  }
+  .subscribe_menu .content div.close {
+    right: 30px;
+    top: 20px;
+  }
+}
+@media (max-width: 400px) {
+  .subscribe_menu .content {
+    padding: 15px 20px;
+  }
+  .subscribe_menu .content div.close {
+    right: 20px;
+    top: 15px;
+  }
+  .subscribe_menu .content p {
+    font-size: 12px;
+  }
+  .subscribe_menu .content button, .subscribe_menu .content input, .subscribe_menu .content p {
+    margin-top: 15px;
+  }
 }
 
 /*# sourceMappingURL=subscribe_menu.css.map */

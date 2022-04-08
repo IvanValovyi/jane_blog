@@ -50,6 +50,11 @@
   transition: 0.3s;
   user-select: none;
 }
+@media (max-width: 500px) {
+  .post .options_blok .like_btn, .post .options_blok .reply_btn {
+    padding: 3px 6px;
+  }
+}
 .post .options_blok .like_btn {
   display: flex;
   align-items: center;
@@ -70,6 +75,12 @@
   margin-right: 5px;
   transition: 0.3s;
 }
+@media (max-width: 500px) {
+  .post .options_blok .like_btn svg {
+    width: 15px;
+    height: 15px;
+  }
+}
 .post .options_blok .reply_btn {
   background: black;
   color: white;
@@ -83,6 +94,11 @@
   color: black;
   padding: 0 10px;
   margin-left: 8px;
+}
+@media (max-width: 500px) {
+  .post .options_blok .reply_btn span {
+    padding: 0 5px;
+  }
 }
 .post .reply_blok {
   width: 100%;

@@ -46,6 +46,9 @@
                 position: relative
                 user-select: none
                 cursor: pointer
+                &:last-child
+                    img
+                        filter: sepia(75%)
                 &:hover
                     background: #c4bcbc
                 &::before
@@ -75,6 +78,8 @@
             margin: 15px 0
             background: #f0eaea
             @include flex(center, center)
+            @media ( max-width: 400px )
+                height: 100px
     &.tags
         .content
             @include flex(flex-start, center)
@@ -89,7 +94,7 @@
                 margin: 5px
                 cursor: pointer
                 user-select: none
-                font-size: 14px
+                
                 font-family: "Open Sans", sans-serif
                 &:hover
                     background: #dfdbdb
@@ -101,6 +106,8 @@
             width: 100%
             @include flex(flex-start, center)
             padding: 15px 0
+            @media ( max-width: 500px )
+                @include flex(space-evenly, center)
             a
                 margin-right: 10px
                 &:last-child

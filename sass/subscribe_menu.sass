@@ -52,8 +52,28 @@
         input
             border: 1px solid black
             padding: 5px
-            width: calc( 100% - 10px )
+            width: calc( 100% - 12px )
             font-size: 18px
             &:focus
                 outline: 1px solid black
                 border-radius: 5px
+
+@media ( max-width: 750px )
+    .subscribe_menu .content
+        min-width: none
+        max-width: 80vw
+        padding: 20px 30px
+        div.close
+            right: 30px
+            top: 20px
+
+@media ( max-width: 400px )
+    .subscribe_menu .content
+        padding: 15px 20px
+        div.close
+            right: 20px
+            top: 15px
+        p
+            font-size: 12px
+        button, input, p
+            margin-top: 15px

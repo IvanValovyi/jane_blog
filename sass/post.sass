@@ -34,6 +34,8 @@
             cursor: pointer
             transition: 0.3s
             user-select: none
+            @media ( max-width: 500px )
+                padding: 3px 6px
         .like_btn
             @include flex(flex-start, center)
             border: 1px solid #4b4a4a
@@ -47,6 +49,9 @@
                 height: 20px
                 margin-right: 5px
                 transition: 0.3s
+                @media ( max-width: 500px )
+                    width: 15px
+                    height: 15px
         .reply_btn
             background: black
             color: white
@@ -58,6 +63,8 @@
                 color: black
                 padding: 0 10px
                 margin-left: 8px
+                @media ( max-width: 500px )
+                    padding: 0 5px
     .reply_blok
         width: 100%
         border-top: 1px solid #c7c5c5

@@ -22,6 +22,111 @@
   src: url(https://fonts.gstatic.com/s/opensans/v28/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4gaVI.woff2) format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
+h1 {
+  font-size: 48px;
+}
+h1.bold_title {
+  font-size: 64px;
+  letter-spacing: 2px;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+h6 {
+  font-size: 16px;
+}
+
+p {
+  font-size: 16px;
+}
+
+.date {
+  font-size: 18px;
+}
+
+.name {
+  font-size: 36px;
+}
+
+.tag {
+  font-size: 14px;
+}
+
+button.subscribe {
+  font-size: 24px;
+}
+
+footer p {
+  font-size: 18px;
+}
+
+@media (max-width: 550px) {
+  h1 {
+    font-size: 36px;
+  }
+  h1.bold_title {
+    font-size: 48px;
+    letter-spacing: 1px;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  h6 {
+    font-size: 14px;
+  }
+
+  button.subscribe {
+    font-size: 18px;
+  }
+}
+@media (max-width: 440px) {
+  h1 {
+    font-size: 32px;
+  }
+  h1.bold_title {
+    font-size: 36px;
+    line-height: 1.2;
+  }
+
+  h6 {
+    font-size: 12px;
+  }
+
+  .name {
+    font-size: 24px;
+  }
+
+  .date {
+    font-size: 14px;
+  }
+
+  .tag {
+    font-size: 12px;
+  }
+
+  p {
+    font-size: 12px;
+  }
+}
+@media (max-width: 375px) {
+  .date {
+    font-size: 12px;
+  }
+}
 body, * {
   margin: 0;
   padding: 0;
@@ -53,45 +158,16 @@ button {
 
 button.subscribe {
   padding: 10px 20px;
-  font-size: 24px;
-  font-weight: 100;
-}
-
-h1 {
-  font-size: 48px;
-}
-h1.bold_title {
-  font-size: 64px;
-  letter-spacing: 2px;
-}
-
-h2 {
-  font-size: 30px;
-  font-weight: 400;
-}
-
-h3 {
-  font-size: 20px;
-  font-weight: 400;
-}
-
-h6 {
-  font-size: 16px;
-}
-
-.date {
-  font-size: 18px;
-  color: #00000060;
-}
-
-span.name {
-  font-size: 36px;
 }
 
 .tag {
   background: black;
   color: white;
   padding: 0 5px;
+}
+
+.date {
+  color: #00000054;
 }
 
 .light_text, button.subscribe {
@@ -103,56 +179,16 @@ footer {
   color: white;
   text-align: center;
   padding: 10px 0;
-  font-size: 18px;
 }
 
 @media (max-width: 550px) {
-  h1 {
-    font-size: 36px;
-  }
-  h1.bold_title {
-    font-size: 48px;
-    letter-spacing: 1px;
-  }
-
-  h2 {
-    font-size: 26px;
-  }
-
-  h3 {
-    font-size: 18px;
-  }
-
-  h6 {
-    font-size: 14px;
-  }
-
   button.subscribe {
     padding: 5px 10px;
-    font-size: 18px;
   }
 }
 @media (max-width: 440px) {
-  h1 {
-    font-size: 32px;
-  }
   h1.bold_title {
-    font-size: 36px;
-    line-height: 1.2;
     margin-bottom: 10px;
-  }
-
-  span.name {
-    font-size: 24px;
-  }
-
-  .date {
-    font-size: 14px;
-  }
-}
-@media (max-width: 375px) {
-  .date {
-    font-size: 12px;
   }
 }
 header {
@@ -311,7 +347,7 @@ header svg:hover {
 .subscribe_menu .content input {
   border: 1px solid black;
   padding: 5px;
-  width: calc(100% - 10px);
+  width: calc(100% - 12px);
   font-size: 18px;
 }
 .subscribe_menu .content input:focus {
@@ -319,6 +355,32 @@ header svg:hover {
   border-radius: 5px;
 }
 
+@media (max-width: 750px) {
+  .subscribe_menu .content {
+    min-width: none;
+    max-width: 80vw;
+    padding: 20px 30px;
+  }
+  .subscribe_menu .content div.close {
+    right: 30px;
+    top: 20px;
+  }
+}
+@media (max-width: 400px) {
+  .subscribe_menu .content {
+    padding: 15px 20px;
+  }
+  .subscribe_menu .content div.close {
+    right: 20px;
+    top: 15px;
+  }
+  .subscribe_menu .content p {
+    font-size: 12px;
+  }
+  .subscribe_menu .content button, .subscribe_menu .content input, .subscribe_menu .content p {
+    margin-top: 15px;
+  }
+}
 .tape {
   display: flex;
   align-items: flex-start;
@@ -419,6 +481,11 @@ header svg:hover {
   transition: 0.3s;
   user-select: none;
 }
+@media (max-width: 500px) {
+  .post .options_blok .like_btn, .post .options_blok .reply_btn {
+    padding: 3px 6px;
+  }
+}
 .post .options_blok .like_btn {
   display: flex;
   align-items: center;
@@ -439,6 +506,12 @@ header svg:hover {
   margin-right: 5px;
   transition: 0.3s;
 }
+@media (max-width: 500px) {
+  .post .options_blok .like_btn svg {
+    width: 15px;
+    height: 15px;
+  }
+}
 .post .options_blok .reply_btn {
   background: black;
   color: white;
@@ -452,6 +525,11 @@ header svg:hover {
   color: black;
   padding: 0 10px;
   margin-left: 8px;
+}
+@media (max-width: 500px) {
+  .post .options_blok .reply_btn span {
+    padding: 0 5px;
+  }
 }
 .post .reply_blok {
   width: 100%;
@@ -571,6 +649,9 @@ header svg:hover {
   user-select: none;
   cursor: pointer;
 }
+.heading.pop_posts .content .pop_post:last-child img {
+  filter: sepia(75%);
+}
 .heading.pop_posts .content .pop_post:hover {
   background: #c4bcbc;
 }
@@ -608,6 +689,11 @@ header svg:hover {
   justify-content: center;
   flex-direction: row;
 }
+@media (max-width: 400px) {
+  .heading.advertise .content {
+    height: 100px;
+  }
+}
 .heading.tags .content {
   display: flex;
   align-items: center;
@@ -625,7 +711,6 @@ header svg:hover {
   margin: 5px;
   cursor: pointer;
   user-select: none;
-  font-size: 14px;
   font-family: "Open Sans", sans-serif;
 }
 .heading.tags .content .tag:hover {
@@ -642,6 +727,14 @@ header svg:hover {
   justify-content: flex-start;
   flex-direction: row;
   padding: 15px 0;
+}
+@media (max-width: 500px) {
+  .heading.follow .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+  }
 }
 .heading.follow .content a {
   margin-right: 10px;
