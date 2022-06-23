@@ -134,6 +134,7 @@ body, * {
 
 body {
   background: #e2dfdf;
+  overflow-x: hidden;
 }
 
 .app {
